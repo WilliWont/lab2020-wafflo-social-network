@@ -1,0 +1,94 @@
+body{
+    position:relative;
+    overflow-x: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(55,59,68);
+    background: linear-gradient(152deg, rgba(55,59,68,1) 0%,
+     rgba(57,73,101,1) 48%, rgba(62,105,175,1) 79%, rgba(66,134,244,1) 100%);
+    background-repeat: no-repeat;
+    min-height:100vh;
+    color:rgb(240,240,240);
+}
+#body-container{
+    width:40vw;
+    padding: 1.25vh 2.5vw;
+    background-color: rgba(0,0,0,.1);
+}
+#header-container{
+    font-family: header;
+    font-weight: 900;
+    font-size:1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:2.5vh;
+}
+#content-container,#title-container{
+    margin-bottom:2.5vh;
+    width: 100%;
+}
+#title-container > input, #content-container > textarea{
+    width:100%;
+    resize: vertical;
+    font-size:1.5rem;
+    background-color: rgba(0,0,0,.25);
+    border:none;
+    outline:none;
+    color:rgb(240,240,240);
+}
+#content-container > textarea{
+    min-height:30vh;
+}
+#btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    gap: 1vw;
+}
+#btn-container input{
+    width:10vw;
+    padding: 1vh 2vw;
+    margin: 2.5vh 0;
+}
+input[value="Return to Home"]{
+    transition: .1s ease;
+    cursor: pointer;
+    text-transform: lowercase;
+    font-weight: 900;
+    padding: .3em .8em;
+    background-color: rgba(0,0,0,.1);
+    outline: none;
+    border-style:solid;
+    border-color:#ECF0F1;
+    color:#ECF0F1;
+    border-width: 2px;
+    border-radius: 2px;
+}
+input[value="Return to Home"]:hover{
+    transition: .1s ease;
+    background-color: #ECF0F1;
+    border-color:#ECF0F1;
+    color:rgb(55,59,68);
+}
+input[value="Post Article"]{
+    transition: .1s ease;
+    cursor: pointer;
+    text-transform: lowercase;
+    padding: .3em .8em;
+    background-color: #32d877;
+    outline: none;
+    border-style:solid;
+    border-color:#32d877;
+    color:rgb(240,240,240);
+    border-width: 2px;
+    border-radius: 2px;
+}
+input[value="Post Article"]:hover{
+    transition: .1s ease;
+    background-color: #29b463;
+    border-color:#29b463;
+    color:rgb(240,240,240);
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/login.css">
+    </head>
+    <body>
+        <div id = 'login'>
+            <div id ='loginForm'>
+                <h1>wafflo</h1>
+                <form action="DispatchServlet" method="POST">
+                    <div class="input-group">
+                        <input type="text" name="txtEmail" id="form-username" value="" required/>
+                        <label for="form-username">Email Address</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" name="txtPassword" id="form-password" value="" required/>
+                        <label for="form-password">Password</label>
+                    </div>
+                    <br>
+                    <div class="form-btn-container">
+                        <input type="submit" value="Login" name="btnAction" class="form-btn" id="btn-login"/>
+                    </div>
+                </form>
+                <br>
+            </div>
+            <form action="DispatchServlet">
+                <input type="submit" value="Register" name="btnAction" class="form-btn-alt" id="btn-register"/>
+            </form>
+        </div>
+    </body>
+</html>

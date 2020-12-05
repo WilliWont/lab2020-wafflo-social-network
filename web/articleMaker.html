@@ -1,0 +1,37 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>wafflo</title>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/post.css">
+    </head>
+    <body>
+        <div id="body-container">
+            <div id="header-container">
+            <h1>ARTICLE MAKER</h1>
+            </div>
+            <div id="form-container">
+            <form action="DispatchServlet" method="POST" id="textForm" enctype='multipart/form-data'>
+                <div id="title-container">
+                Title
+                <br>
+                <input type="text" name="txtPostTitle" value=""/>
+                </div>
+                <div id="content-container">
+                Content
+                <br>
+                <textarea name="txtPostContent" form="textForm"></textarea>
+                <input type="file" name="txtImage" accept="image/*"/>
+                </div>
+                <div id="btn-container">
+                <input type="submit" value="Return to Home" name="btnAction"/>
+                <input type="submit" value="Post Article" name="btnAction"/>
+                </div>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>

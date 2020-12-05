@@ -1,0 +1,275 @@
+body{
+    position:relative;
+    overflow-x: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(55,59,68);
+    background: linear-gradient(152deg, rgba(55,59,68,1) 0%,
+     rgba(57,73,101,1) 48%, rgba(62,105,175,1) 79%, rgba(66,134,244,1) 100%);
+}
+#result-empty{
+    color:rgb(240,240,240);
+}
+input[name="txtSearch"], input[value="Search Article"]{
+    font-size:300%;
+}
+#search-container{
+    width:90vw;
+    padding: 1.5vw;
+    background-color:rgba(0,0,0,.1);
+}
+#welcome-container{
+    color:rgb(240,240,240);
+}
+#search-header{
+    position:relative;
+}
+#welcome-msg{
+    font-weight: 100;
+    font-family: body;
+    font-size:5rem;
+}
+#welcome-name{
+    font-weight: 900;
+    font-size:5rem;
+    text-transform: uppercase;
+}
+input[value="Search Article"]{
+    cursor: pointer;
+    background-color: rgba(0,0,0,.25);
+    outline: none;
+    border-style:solid;
+    border-color: rgb(230,230,230);
+    color:rgb(230,230,230);
+    border-width: 5px;
+    border-radius: 4px;
+    padding: 1vh 2vw;
+}
+input[value="Search Article"]:hover{
+    border-color: rgb(220,220,220);
+    color:rgb(220,220,220);
+}
+#btn-control-container{
+    position:absolute;
+    height:10vh;
+    left:0;
+    bottom:-10vh;
+}
+input[value="Logout"]{
+    transition: .1s ease;
+    cursor: pointer;
+    text-transform: lowercase;
+    font-weight: 900;
+    padding: .3em .8em;
+    background-color: rgba(0,0,0,.1);
+    outline: none;
+    border-style:solid;
+    border-color:#E08283;
+    color:#E08283;
+    border-width: 2px;
+    border-radius: 2px;
+}
+input[value="Logout"]:hover{
+    transition: .1s ease;
+    background-color: #E08283;
+    border-color:#E08283;
+    color:rgb(240,240,240);
+}
+input[value="Make an Article"]{
+    transition: .1s ease;
+    cursor: pointer;
+    text-transform: lowercase;
+    padding: .3em .8em;
+    background-color: #32d877;
+    outline: none;
+    border-style:solid;
+    border-color:#28b362;
+    color:rgb(240,240,240);
+    border-width: 2px;
+    border-radius: 2px;
+}
+input[value="Make an Article"]:hover{
+    transition: .1s ease;
+    background-color: #229e56;
+    border-color:#229e56;
+    color:rgb(240,240,240);
+}
+input[value="Notification"]{
+    transition: .1s ease;
+    cursor: pointer;
+    text-transform: lowercase;
+    padding: .3em .8em;
+    background-color: #7CACDD;
+    outline: none;
+    border-style:solid;
+    border-color:#7CACDD;
+    color:rgb(240,240,240);
+    border-width: 2px;
+    border-radius: 2px;
+}
+input[value="Notification"]:hover{
+    transition: .1s ease;
+    background-color: #5c8bb9;
+    border-color:#5c8bb9;
+    color:rgb(240,240,240);
+}
+input[name="txtSearch"]{
+    background-color: rgba(0,0,0,.5);
+    color: rgb(240,240,240);
+    outline: none;
+    padding: 1vh 1vw;
+    border-style:none;
+}
+#search-header-container{
+    position:relative;
+    min-height:60vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-header-full{
+    min-height:100vh !important;
+}
+#search-content{
+    display:flex;
+    gap:.5vw;
+    flex-wrap: wrap;
+}
+.div-article{
+    transition: .1s ease;
+    position:relative;
+    background-color:rgba(0,0,0,.1);
+    color:rgb(240,240,240);
+    width:22.125vw;
+    max-width:22.125vw;
+    height:40vh;
+    display:grid;
+    grid-template-rows: 70% 30%;
+    overflow:hidden;
+}
+.article-img-container{
+    transition: 1s ease;;
+    background-color:rgba(240,240,240,.5);
+    max-width:22.125vw;
+    overflow:hidden;
+}
+.article-info-container{
+    max-width:22.125vw;
+    overflow:hidden;
+}
+.div-article:hover .div-article-title > a{
+    transition: .1s ease;;
+    color:#3E69AE;
+}
+
+
+.div-article-title, .div-article-title > a{
+    transition: .1s ease;;
+    color:#7CACDD;
+    font-size: 125%;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+img {
+    filter: grayscale(25%);
+    transition: .75s ease;;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+.article-img-container:hover img{
+    transition: 1s ease;;
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+.div-article-vote{
+    font-weight:900;
+    position:absolute;
+    font-family: header;
+    right:0;
+    width:100%;
+    text-align: right;
+    padding: .1vh .25vw;
+    font-size:175%;
+    color:rgb(0,0,0);
+    filter: invert(100%) sepia(1%) saturate(5622%) hue-rotate(207deg) brightness(117%) contrast(87%);
+}
+.vote-positive{
+    filter: invert(71%) sepia(28%) saturate(1007%) hue-rotate(333deg) brightness(101%) contrast(91%);
+}
+.vote-negative{
+    filter: invert(73%) sepia(6%) saturate(3651%) hue-rotate(183deg) brightness(91%) contrast(92%);
+}
+.btn-page-container{
+    position:relative;
+    width:100%;
+}
+.btn-page-container input[value="Next Page"]{
+    font-size:120%;
+    position: absolute;
+    right:0;
+}
+.btn-page-container input[value="Previous Page"]{
+    font-size:120%;
+    position: absolute;
+    left:0;
+}
+
+#notif-btn{
+    position: relative;
+    display:inline-block;
+}
+#notif-amount{
+    transition: .1s ease;
+    position: absolute;
+    display:flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    top:-.6rem;
+    right:-.6rem;
+    border-style:solid;
+    font-size:1rem;
+}
+.notif-full{
+    transition: .1s ease;
+    width:1.2rem;
+    height:1.2rem;
+    color:rgb(40,40,40);
+    border-color:#e68d44;
+    background-color:#F4A361;    
+}
+.notif-empty{
+    transition: .1s ease;
+    opacity:0;
+/*    width:1rem;
+    height:1rem;
+    font-size:.8rem;
+    color:rgb(40,40,40);
+    border-color:rgb(200,200,200);
+    background-color:rgb(200,200,200);*/
+}
+input[value="Next Page"], input[value="Previous Page"]{
+    cursor: pointer;
+    text-transform: lowercase;
+    width:10vw;
+    height: 7.5vh;
+    background-color: rgba(0,0,0,.25);
+    outline: none;
+    border-style:solid;
+    border-color: rgb(230,230,230);
+    color:rgb(230,230,230);
+    border-width: 3px;
+    border-radius: 4px;
+    padding: 1vh 0;
+    margin-top: 5vh;
+    margin-bottom: 2.5vh;
+}
+
+input[value="Next Page"]:hover, input[value="Previous Page"]:hover{
+    border-color: rgb(200,200,200);
+    color: rgb(200,200,200);
+}

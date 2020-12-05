@@ -1,0 +1,200 @@
+body{
+    position:relative;
+    overflow-x: hidden;
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: rgb(55,59,68);
+    background: linear-gradient(152deg, rgba(55,59,68,1) 0%,
+     rgba(57,73,101,1) 48%, rgba(62,105,175,1) 79%, rgba(66,134,244,1) 100%);
+    background-repeat: no-repeat;
+    min-height:100vh;
+    color:rgb(240,240,240);
+    }
+#body-container{
+    position:relative;
+    background-color: rgba(0,0,0,.1);
+    min-height:100vh;
+    width:40vw;
+}
+#btn-control-container{
+    position: absolute;
+    right: 44vw;
+}
+#div-article-content-container{
+    background-color: rgba(0,0,0,.15);
+    /* padding: 0 1vw; */
+    /* min-height:30vh; */
+}
+#div-article-desc-container{
+    border-style:solid;
+    border-width: 1px;
+    border-radius: 2px;
+    margin: 1vh 0;
+    padding: 1vh 1vw;
+    background-color: rgba(0,0,0,.15);
+}
+#div-article-vote-container{
+    font-size:1.25rem;
+    position: absolute;
+    width:4vw;
+    left:-4vw;
+    top:0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2.5vh 0;
+    background-color:rgba(0,0,0,.25);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    gap: 2.5vh;
+}
+button, button img {
+    width: 2vw;
+    height:2vw;
+}
+
+#voteValue{
+    font-size:2rem;
+    color:black;
+    filter: invert(0.4) sepia(1) saturate(12.1) hue-rotate(0deg) brightness(1.2);
+}
+
+button {
+    position: relative;
+    background-color: rgba(0,0,0,0);
+}
+
+button img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#div-article-title-container > h1{
+    color:#4286F3;
+}
+.msg-error{
+    color:#E08283;
+}
+.btn-vote{
+    color:black;
+    filter: invert(100%) sepia(1%) saturate(5622%) hue-rotate(207deg) brightness(117%) contrast(87%);
+    border-style:none;
+    cursor: pointer;
+    outline:none;
+}
+#btn-Downvote{
+    transform: rotate(180deg);
+}
+.btn-upvote-clicked,.upvote-clicked{
+    color:black;
+    filter: invert(71%) sepia(28%) saturate(1007%) hue-rotate(333deg) brightness(101%) contrast(91%);
+}
+.btn-downvote-clicked,.downvote-clicked{
+    color:black;
+    filter: invert(73%) sepia(6%) saturate(3651%) hue-rotate(183deg) brightness(91%) contrast(92%);
+}
+#image-container > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#div-article-cmt-form-container{
+    position: relative;
+    height:20vh;
+    margin-bottom:4vh;
+}
+#div-article-cmt-form-container input[value="Post Comment"]{
+    position: absolute;
+    bottom:-4vh;
+    right:2px;
+    height:4vh;
+    transition: .1s ease;
+    cursor: pointer;
+    text-transform: lowercase;
+    font-weight: 900;
+    padding: .3em .8em;
+    background-color: #ECF0F1;
+    outline: none;
+    border-style:solid;
+    border-color:#ECF0F1;
+    color:rgb(55,59,68);
+    border-width: 2px;
+}
+#div-article-cmt-form-container input[value="Post Comment"]:hover{
+    transition: .1s ease;
+    background-color: #d1d4d4;
+    border-color: #d1d4d4;
+    border-radius: 4px;
+}
+#div-article-cmt-form-container textarea{
+    font-size:110%;
+    height: 20vh;
+    width: 100%;
+    padding-bottom:4vh;
+    border:none;
+    resize: none;
+    background-color: rgba(0,0,0,.25);
+    border:none;
+    outline:none;
+    color:rgb(240,240,240);
+}
+#div-article-cmt-form-container textarea:focus{
+    background-color: rgba(0,0,0,.5);
+}
+.div-cmt-single{
+    transition: .2s ease;
+    background-color: rgba(0,0,0,.1);
+    position:relative;
+    padding: 1vh 1vw;
+    margin: .05vh 0;
+}
+.div-cmt-single:hover{
+    transition: .2s ease;
+    background-color: rgba(0,0,0,.2);
+    transform:translateX(.05vw);
+}
+.div-cmt-single:hover .div-cmt-head > a{
+    transition: .1s linear;
+    opacity: 100%;
+    color:rgb(255,140,140);
+}
+.div-cmt-body{
+    padding: 0 .5vw;
+}
+.cmt-owner{
+    color:#F7CA17;
+}
+.div-cmt-head > a{
+    transition: .2s ease;
+    opacity: 40%;
+    font-size: 1rem;
+    position: absolute;
+    right:1rem;
+    bottom: 1rem;
+    color:rgb(140,140,140);
+}
+input[value="Return to Home"]{
+    transition: .1s ease;
+    cursor: pointer;
+    text-transform: lowercase;
+    font-weight: 900;
+    padding: .3em .8em;
+    background-color: rgba(0,0,0,.1);
+    outline: none;
+    border-style:solid;
+    border-color:#ECF0F1;
+    color:#ECF0F1;
+    border-width: 2px;
+    border-radius: 2px;
+}
+input[value="Return to Home"]:hover{
+    transition: .1s ease;
+    background-color: #ECF0F1;
+    border-color:#ECF0F1;
+    color:rgb(55,59,68);
+}
+#cmt-template{
+    display:none;
+}

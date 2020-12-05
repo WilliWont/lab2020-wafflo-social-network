@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/register.css">
+        <title>wafflo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+    <div id='regi'>
+    <div id='regiForm'>
+        <h1>registration</h1>
+        <form action="DispatchServlet" method="POST">
+                        
+            <div class="input-container">
+                            <div class="input-group">
+                <input type="text" name="txtNameF" id="form-nameF" 
+                value=""/>
+                <label for="form-nameF">First Name</label>
+            </div>
+                
+            <div class="input-group">
+                <input type="text" name="txtNameL" id="form-nameL" 
+                value=""/>
+                <label for="form-nameL">Last Name</label>
+            </div>
+            <div class="input-group">
+                <input type="text" name="txtEmail" id="form-email" 
+                value=""/>
+                <label for="form-email">Email Address</label>
+            </div>
+                
+
+                
+            <div class="input-group">
+                <input type="password" name="txtPassword" id="form-pw" 
+                value=""/>
+                <label for="form-pw">Password</label>
+            </div>
+                
+            <div class="input-group">
+                <input type="password" name="txtPasswordConf" id="form-pwConf" 
+                value=""/>
+                <label for="form-pwConf">Repeat Password:</label>
+            </div>
+                
+            </div>
+                <div class="form-btn-container">
+                    <input type="submit" value="Register Account" name="btnAction" class="form-btn" id='btn-register'>
+                    <a href="login.html">return to login</a>
+                </div>
+        </form>
+    </div>    
+    </div>
+    </body>
+</html>

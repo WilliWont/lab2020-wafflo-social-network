@@ -1,0 +1,65 @@
+#regi{
+    position:relative;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(55,59,68);
+    background: linear-gradient(152deg, rgba(55,59,68,1) 0%,
+     rgba(57,73,101,1) 48%, rgba(62,105,175,1) 79%, rgba(66,134,244,1) 100%);
+}
+h1{
+    font-weight: 900;
+    width:100%;
+    font-size:2em;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color:#E4F1FE;
+    margin-bottom: 1rem;
+}
+.input-group input{
+    background-color:rgba(0,0,0,.1);
+}
+#regiForm{
+    background-color:rgba(0,0,0,0.1);
+    padding: 1em 4em;
+}
+.input-group{
+    position:relative;
+    margin-bottom: 6vh;
+}
+.msg-error{
+    position:absolute;
+    right:0;
+    font-size: .75rem;
+    bottom: -1rem;
+    color:#E08283;
+}
+.form-btn-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2vh;
+}
+.form-btn{
+    width:100%;
+}
+a{
+    color:rgba(62,105,175,1);
+}
+a:hover{
+    color:rgb(90, 139, 219);
+}
+#regiForm-success{
+    background-color:rgba(0,0,0,.1);
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
